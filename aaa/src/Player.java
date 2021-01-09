@@ -3,7 +3,7 @@ package src;
 import java.io.File;
 import java.io.Serializable;
 /**
- * Student类，实现Serializable接口
+ * qlayer类，实现Serializable接口
  */
 public class Player implements Serializable{
 	private File imagePic;

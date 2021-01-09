@@ -7,10 +7,10 @@ import java.io.*;
 import java.util.*;
 import javax.swing.filechooser.*;
 /**
- * 录入学生信息类，负责提供录入学生信息的界面
+ * 录入球员信息类，负责提供录入球员信息的界面
  */
 public class InputStudentInformation extends JPanel implements ActionListener {
-	private Player player = null;// 学生对象
+	private Player player = null;// 球员对象
 	private HashMap<String, Player> informationTable = null;
 	private JTextField numberTField, nameTField, gradeTField, birthdayTField;
 	private JButton picButton;// 选择照片按钮
@@ -75,7 +75,7 @@ public class InputStudentInformation extends JPanel implements ActionListener {
 		JLabel majorLabel = new JLabel("位置:", JLabel.CENTER);
 		majorComBox = new JComboBox<String>();
 		try {
-			// 从文件中读入专业名称，加入到组合框中
+			// ，加入到组合框中
 			FileReader fileReader = new FileReader("位置.txt");
 			BufferedReader bufferedReader = new BufferedReader(fileReader);
 			String s = null;

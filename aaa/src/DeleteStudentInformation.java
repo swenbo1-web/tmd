@@ -22,7 +22,7 @@ public class DeleteStudentInformation extends JPanel implements ActionListener {
 	private File systemFile = null;
 	private JPanel messPanel;// 显示基本信息的容器
 	/**
-	 * 构造方法，初始化删除学生信息界面
+	 * 构造方法，初始化删除球员信息界面
 	 */
 	public DeleteStudentInformation(File file) {
 		systemFile = file;
@@ -32,7 +32,7 @@ public class DeleteStudentInformation extends JPanel implements ActionListener {
 		validate();
 	}
 	/**
-	 * 初始化显示学生信息部分界面
+	 * 初始化显示球员信息部分界面
 	 */
 	public void initMessPanel() {
 		JLabel deleteLabel = new JLabel("球员id:", JLabel.CENTER);
@@ -90,7 +90,7 @@ public class DeleteStudentInformation extends JPanel implements ActionListener {
 		messPanel.add(boxH);
 	}
 	/**
-	 * 当点击删除按钮和在学号文本框中回车时执行的操作
+	 * 当点击删除按钮和在球员文本框中回车时执行的操作
 	 */
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == deleteButton || e.getSource() == numberTField) {

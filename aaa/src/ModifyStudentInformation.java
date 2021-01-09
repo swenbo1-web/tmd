@@ -8,7 +8,7 @@ import java.util.*;
 import javax.swing.filechooser.*;
 
 /**
- * 修改学生信息类，负责提供修改学生信息的界面
+ * 修改球员息类，负责提供修改球员信息的界面
  */
 public class ModifyStudentInformation extends JPanel implements ActionListener {
 	private HashMap<String, Player> informationTable = null;
@@ -27,7 +27,7 @@ public class ModifyStudentInformation extends JPanel implements ActionListener {
 	private JPanel messPanel;// 显示基本信息的容器
 
 	/**
-	 * 构造方法，初始化修改学生信息界面
+	 * 构造方法，初始化修改球员信息界面
 	 */
 	public ModifyStudentInformation(File file) {
 		systemFile = file;
@@ -53,7 +53,7 @@ public class ModifyStudentInformation extends JPanel implements ActionListener {
 	}
 
 	/**
-	 * 初始化显示学生信息部分界面
+	 * 初始化显示球员信息部分界面
 	 */
 	public void initMessPanel() {
 		JLabel numberLabel = new JLabel("(旧)球员id:", JLabel.CENTER);
@@ -83,7 +83,7 @@ public class ModifyStudentInformation extends JPanel implements ActionListener {
 		JLabel majorLabel = new JLabel("（新）位置:", JLabel.CENTER);
 		majorComBox = new JComboBox<String>();
 		try {
-			// 从文件中读入位置名称，加入到组合框中
+			// ，加入到组合框中
 			FileReader fileReader = new FileReader("位置.txt");
 			BufferedReader bufferedReader = new BufferedReader(fileReader);
 			String s = null;
@@ -124,7 +124,7 @@ public class ModifyStudentInformation extends JPanel implements ActionListener {
 	}
 
 	/**
-	 * 当点击开始修改按钮、修改按钮、选择照片按钮和在学号文本框中回车时执行的操作
+	 * 当点击开始修改按钮、修改按钮、选择照片按钮和在id文本框中回车时执行的操作
 	 */
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == beginModifyButton || e.getSource() == numberTField) {
